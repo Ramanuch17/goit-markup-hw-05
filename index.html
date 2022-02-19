@@ -13,7 +13,7 @@
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/styles.css" />
-  <title>Веб Студия</title>
+  <title>goit-markup-hw-05</title>
 </head>
 
 <body>
@@ -64,7 +64,7 @@
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <button type="button">Заказать услугу</button>
+        <button type="button" data-modal-open>Заказать услугу</button>
       </div>
     </section>
 
@@ -102,7 +102,7 @@
     <!---------- Work section ---------->
 
     <section class="section work">
-      <div class="container wor">
+      <div class="container">
         <h2 class="work-title">Чем мы занимаемся</h2>
         <ul class="work-list">
           <li class="work-item">
@@ -390,7 +390,17 @@
       </aside>
     </div>
   </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="btn-close" data-modal-close>
+        <svg width="11" height="11">
+          <use href="./images/icons.svg#close-btn"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
   <script src="./js/modal.js"></script>
 </body>
+
 
 </html>
